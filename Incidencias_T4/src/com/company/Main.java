@@ -363,8 +363,6 @@ public class Main {
                                                     System.out.println("Incidencia registrada con éxito!!");
                                                     System.out.println("---------------------------------------------------------------------\n" + ANSI_RESET);
 
-                                                    //TODO TELEGRAM ADMINISTRADOR
-
                                                     //MENSAJE TELEGRAM
                                                     Funciones.enviaMensajeTelegram(mensaje);
 
@@ -434,7 +432,8 @@ public class Main {
                                                     System.out.println("Incidencia registrada con éxito!!");
                                                     System.out.println("---------------------------------------------------------------------\n" + ANSI_RESET);
 
-                                                    //TODO TELEGRAM ADMINISTRADOR2
+                                                    //MENSAJE TELEGRAM
+                                                    Funciones.enviaMensajeTelegram(mensaje);
 
                                                     opcionMenuPrioridadIncidencias = 0;
 
@@ -507,7 +506,8 @@ public class Main {
                                                     System.out.println("Incidencia registrada con éxito!!");
                                                     System.out.println("---------------------------------------------------------------------\n" + ANSI_RESET);
 
-                                                    //TODO TELEGRAM ADMINISTRADOR3
+                                                    //MENSAJE TELEGRAM
+                                                    Funciones.enviaMensajeTelegram(mensaje);
 
                                                     opcionMenuPrioridadIncidencias = 0;
                                                 }
@@ -887,8 +887,9 @@ public class Main {
 
                     } while (!administrador1.compruebaUsuario(usuario) || !administrador1.compruebaPassword(password));
 
+                    //TODO ADMINISTRADOR
                     //MENÚ ADMINISTRADOR
-                    do {//TODO ADMINISTRADOR
+                    do {
                         Funciones.pintaMenuAdministrador(administrador1.getNombre());
 
                         try {
